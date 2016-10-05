@@ -286,7 +286,7 @@ class Table(object):
     def _prepare_geom(self, geom, srid, transform_srid=None, multi_geom=True):
         """Prepares WKT geometry by projecting and casting as necessary."""
 
-        if geom is None:
+        if geom is None or geom == '':
             # TODO: should this use the `EMPTY` keyword?
             return '{} EMPTY'.format(self.geom_type)
 
