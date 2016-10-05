@@ -12,6 +12,7 @@ FIELD_TYPE_MAP = {
     'NCHAR':        'text',
     'STRING':       'text',
     'DATETIME':     'date',
+    'TIMESTAMP':    'date',
     'FIXED_CHAR':   'text',
     # HACK: Nothing else in an SDE database should be using OBJECTVAR.
     'OBJECTVAR':    'geom',
